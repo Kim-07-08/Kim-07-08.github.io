@@ -15,58 +15,108 @@
         <p>Design tokens and resusable styles for the website.</p> 
 
         <!-- Website Container -->
-         <section>
+          <section id="website container" class="m-2 p-2 shadow-dark">
             <h2>Website Container</h2>
             <p>Normal content width: 1280px</p>
             <p>Mobile content width: 576px</p>
          </section>
 
          <!-- Colour Palette-->
-          <section>
+          <section id="colors" class="m-2 p-2 shadow-dark">
             <h2>Colour Palette</h2>
+
+            <article class="swatches d-flex gap-2">
+                <!-- Color Swatch -->
+                <div class="swatch">
+                    <div class="swatch-value bg-primary"></div>
+                    <p class="swatch-name">Primary</p>
+                </div>
+
+                <!-- Color Swatch -->
+                <div class="swatch">
+                    <div class="swatch-value bg-light"></div>
+                    <p class="swatch-name">Light</p>
+                </div>
+
+                <!-- Color Swatch -->
+                <div class="swatch">
+                    <div class="swatch-value bg-dark"></div>
+                    <p class="swatch-name">Dark</p>
+                </div>
+
+                <!-- Color Swatch -->
+                <div class="swatch">
+                    <div class="swatch-value bg-muted"></div>
+                    <p class="swatch-name">Muted</p>
+                </div>
+
+            </article>
           </section>
 
           <!-- Fonts and Typography -->
-           <section>
+           <section id="typography" class="m-2 p-2 shadow-dark">
             <h2>Typography</h2>
 
-            <h1>Heading XL - MCAST Institute for Creative Arts</h1>
-            <h2>Heading LG - Full time courses</h2>
+            <h1 class="heading-xl">Heading XL - MCAST Institute for Creative Arts</h1>
+            <h2 class="heading-lg">Heading LG - Full time courses</h2>
             <p>Body Text - Used for general descriptions</p>
-            <p>Muted Text - For subtle details</p>
+            <p class="text-muted bg-dark">Muted Text - For subtle details</p>
+
+            <p class="line-1">Single line cutoff - Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis mollitia, numquam aliquid, magni eveniet, earum nemo ex perspiciatis voluptates laudantium totam animi exercitationem cum incidunt delectus! Facere minima iusto eveniet officiis excepturi nihil porro eligendi est, voluptatem laborum, neque doloremque laudantium eaque expedita. Mollitia, vitae optio. Iste provident nostrum fugit in eveniet laudantium molestias atque minima, hic quas non pariatur delectus. Alias, distinctio dignissimos corporis corrupti sapiente dicta cumque, veritatis voluptas aut obcaecati repudiandae magni deleniti impedit facilis suscipit in error voluptatibus voluptatum enim voluptatem numquam quas. Velit illum labore est iste? Repellat fugit voluptatem labore. Quam, et libero maiores maxime perferendis harum fugit magni culpa delectus? Non labore sequi eius praesentium necessitatibus enim temporibus. Commodi consectetur autem ex voluptate hic voluptatibus nobis unde totam earum quibusdam. Sed modi voluptates explicabo. Quia, eligendi perferendis. Corrupti consectetur veritatis alias distinctio harum dolorum voluptatum ducimus nam, natus sequi magni voluptate rerum? Perferendis magni iste ratione sit aperiam quis! Laborum aut non quia quisquam molestias aliquam cum quod ea, beatae, officiis soluta inventore sed consequuntur omnis. Similique provident pariatur officia id cupiditate laudantium numquam consectetur illo nemo. At adipisci, sed, dolor rem illo eaque quidem ratione alias amet autem, iusto perferendis esse!</p>
+            <p class="line-2">Double line cutoff - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit voluptates, fugit a quia quibusdam delectus totam aliquam, maiores, quasi vero est dolore officiis vel explicabo nam dolorem sed praesentium. Similique sed aliquam corrupti, pariatur amet doloremque saepe eos aut earum sint iusto quaerat fugit odio, accusamus enim eius laboriosam maxime. Natus rem labore incidunt assumenda! Quos perspiciatis, impedit numquam porro in eius voluptas, quis ut ducimus non sequi repellendus. At laborum saepe dolorem distinctio id dolorum enim fuga nisi cum, cupiditate quis quidem reiciendis debitis in nostrum voluptatum hic consectetur maiores rem deserunt consequatur labore. Perferendis ipsa sapiente veniam itaque? Asperiores voluptatem quae error veniam eligendi eveniet nesciunt labore unde consectetur culpa repellendus tempore, odit quibusdam illum iure ea inventore! Aperiam quae, blanditiis, numquam hic beatae ad dolores repellat, sunt voluptatum animi in quibusdam laudantium magni facere aliquam non voluptate ducimus reprehenderit? Cum rem quis mollitia libero soluta, voluptatem quidem cumque id labore vero non fugiat iure similique inventore ea ullam aliquid assumenda incidunt nesciunt dolorum ab in quibusdam. Eaque labore similique sit, porro voluptatem quod alias doloremque quae earum tempore iste totam quam dolore autem mollitia vero aliquid quisquam inventore nostrum quia nulla et. Libero veritatis ea doloribus ipsa.</p>
+            
            </section>
 
            <!-- Spacing and Sizing -->
-            <section>
+            <section id="spacing" class="m-2 p-2 shadow-dark">
                 <h2>Spacing and Sizing</h2>
 
-                <div>.p-o No Padding</div>
-                <div>.p-1 Small Padding</div>
-                <div>.p-2 Normal Padding</div>
-                <div>.p-3 Large Padding</div>
+                <div class="bg-muted p-0 m-1">.p-o No Padding</div>
+                <div class="bg-muted p-1 m-1">.p-1 Small Padding</div>
+                <div class="bg-muted p-2 m-1">.p-2 Normal Padding</div>
+                <div class="bg-muted p-3 m-1">.p-3 Large Padding</div>
             </section>
 
-            <section>
+            <!-- Layout Utils -->
+            <section id="layout" class="m-2 p-2 shadow-dark">
                 <h2>Layout Utils</h2>
 
-                <div>
+                <div class="d-flex flex-between">
                     <strong>Label</strong>
                     <span>Value</span>
+                </div>
+
+                <div class="grid-2col gap-2 m-2">
+                    <div class="bg-muted p-2">Col 1</div>
+                    <div class="bg-muted p-2">Col 2</div>
+                </div>
+
+                <div class="grid-3col gap-3 m-2">
+                    <div class="bg-muted p-2">Col 1</div>
+                    <div class="bg-muted p-2">Col 2</div>
+                    <div class="bg-muted p-2">Col 3</div>                   
                 </div>
             </section>
 
             <!-- Buttons and Links -->
-             <section>
+             <section id="layout" class="m-2 p-2 shadow-dark">
                 <h2>Buttons and Links</h2>
                 
-                <button>Primary Button</button>
-                <button>Secondary Button</button>
-                <a href="#">Inline Link</a>
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <a href="#" class="link">Inline Link</a>
              </section>
 
              <!-- Components -->
-              <section>
+              <section id="components" class="m-2 p-2 shadow-dark">
                 <h2>Components</h2>
+
+            <p>Profile:</p>
+            <div class="profile">
+                <img src="데이지.jpg" alt="">
+                <strong class="name">Ibin Kim</strong>
+                <span class="job-title">MCAST Student</span>
+            </div>
               </section>
     </main>
     
